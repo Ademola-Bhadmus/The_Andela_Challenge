@@ -1,0 +1,68 @@
+﻿BUG AND IMPROVEMENT REPORT FOR MYANDELA APP
+
+REPORT SUMMARY: THE TEST WAS CARRIED OUT BY ADEMOLA BHADMUS
+NUMBER OF TESTS CYCLES CARRIED OUT: 1
+NUMBER OF BUGS FOUND: 1
+NUMBER OF IMPROVEMENT FOUND: 1
+
+BUG 1:
+DESCRIPTION: 
+Wrong number format for years of experience.
+
+SUMMARY: 
+It was observed that the number of years displayed while adding a new skill or tool shows as a decimal format. The ideal number format for a year should be an integer.
+
+SEVERITY: Medium.
+
+
+STEPS TO REPRODUCE:
+1. Log onto the myandela webpage (https://qa.my.andela.com)
+2. On the RESUME page, Click "add skills".
+3. Insert a skill.
+4. Select the desired one from the dropdown options.
+5. Select level of experience from the dropdown.
+
+
+EXPECTED RESULT: 
+A message should display, indicating the number of years of experience for each level.
+
+ACTUAL RESULT:
+The message displayed showed the number of years as a decimal place.
+
+
+BUG 2:
+DESCRIPTION: Information cannot be removed.
+
+SUMMARY:
+When a user decides to delete an information initally provided, the app denies the user the ability to save successfully.
+If the user decides not to share such an information anymore, the app should allow the user to update succesfully.
+
+SEVERITY: Medium
+
+STEPS TO REPRODUCE:
+1. Log onto the myandela webpage (https://qa.my.andela.com)
+2. On the RESUME page, click EDIT under the Test Engineer card.
+3. Fill correctly an information.
+4. Save the information.
+5. Click edit again.
+6. Delete the information earlier provided.
+7. Attempt to save and exit
+
+
+EXPECTED RESULT:
+User should be able to save and exit successfully.
+
+ACTUAL RESULT:
+The save button was disabled and an error message was displayed telling the user that the field cannot be empty.
+
+
+IMPROVEMENT 1:
+DESCRIPTION: Select all option to add Interest or restriction.
+
+SUMMARY: 
+In other to improve the user experience on the application for a user, a SELECT ALL option should be added to the ADD INTEREST or ADD RESTRICTION sections so that the user can select all options or deselect all options.
+
+ACCEPTANCE CRITERIA:
+1. The select all button should be positioned such that it is easily located by the user.
+2. When the box is checked, all options must be selected and added in the box.
+3. When the box is unchecked, all the options must not be selected and none should be added to the box.
